@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(246, 246, 246);
+}
+header{
+    background-color: #000;
+    width: 100%;
+    height: 60px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+header img{
+    width: 60px;
+    height: auto;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+header a{
+  background-color: #fff;
+  outline: none;
+  border: none;
+padding: 8px 7px;
+border-radius: 8px;
+text-transform: capitalize;
+font-weight: 600;
+cursor: pointer;
+text-decoration: none;
+color: #000;
+}
+

@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap'); */
+
+*{
+    padding: 0 ;
+    margin: 0 ;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(245, 238, 238);
+}
+header{
+    background: #fff;
+    width: 100%;
+    height: 3.6rem;
+    position: sticky;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(255, 108, 22, 0.2);
+    z-index: 999;
+}
+header .wrapper{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.7);
+    width: 100%;
+    height: 100vh;
+    transition: all 3s linear;
+}
+header nav  {
+    background: rgb(255, 255, 255);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100vh;
+    box-shadow: 0 8px 16px 0 rgba(255, 74, 24, 0.2);
+    transition: all 2s linear;
+} 
+header nav .weblogo {
+    width: 100%;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    border-bottom: 3px solid rgb(215, 215, 215);
+    flex-direction: column;
+}
+header nav .weblogo img{
+    width: 100px;
+    height: auto;
+    }
+
+header nav ul {
+        list-style: none;
+    padding: 0; 
+    height: calc(100vh - 180px);
+    overflow: auto;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+header nav ul li a {
+
+    padding: 10px 6px;
+    padding-left: 15px;
+    text-transform: capitalize;
+    font-family: 'Roboto', sans-serif;  
+    color: #222;
+    text-decoration: none;
+    font-weight: 400;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    font-size: 1rem;
+    transition: all .3s linear;
+    background-color: #f2f3f3;
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+header nav ul li a span {
+    padding-left: 8px;
+}
+header nav ul li a.linkActive {
+    background: rgb(9, 224, 85);
+    color: #fff;
+    font-weight: 570;
+    }
+header nav ul li a:hover {
+    background: rgb(255, 115, 0);
+    color: #fff;
+    font-weight: 600;
+    }
+
+header .logo{
+    font-size: 2rem;
+    padding-left: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+header .logo img{
+    width: 30%;
+    height: auto;
+}
+
+header .navbtn{
+    margin-right: 12px;
+    cursor: pointer;
+    padding: 4px;
+}
+header .navbtn:hover{
+    box-shadow: 0 4px 8px 0 rgba(255, 86, 19, 0.2);
+    border-radius: 3px;
+}
+header .navbtn i{
+    font-size: 1.5rem;
+}
+
+/*loader style start */
+#divLoading	{
+    display : none;
+}
+#divLoading.show{
+    display : block;
+    position : fixed;
+    z-index: 10000;
+    background-image : url('Iphone-spinner-2.gif');
+    background-color:rgba(26,26,26,0.935);
+    opacity : 0.8;  
+    background-repeat : no-repeat;
+    background-position : center;
+    left : 0;
+    bottom : 0;
+    right : 0;
+    top : 0;
+}
+#loadinggif.show {left : 50%;
+    top : 50%;
+    position : absolute;
+    z-index : 10005;
+    width : 32px;
+    height : 32px;
+    margin-left : -16px;
+    margin-top : -16px;
+}
+/*lodaer style end */
+
+/* ===========short meter = */
+.shortmeter .card {
+    padding: 0;
+    margin: 0;
+}
+.shortmeter h3 {
+    color: #828997;
+    text-transform: capitalize;
+    font-weight: 320;
+    font-size: 16px;
+}
+.shortmeter .card .card-body{
+    padding: 16px 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.shortmeter .card .card-body i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.1rem;
+    width: 50px;
+    height: 50px;
+    border-radius: 9px;
+  
+    color: #fff;
+    background:  #1b67ff;;
+    margin-right: 10px;
+}
+
+
+
+.shortmeter .card .card-body .data-info span {
+font-size: 15px;
+color: #828997;
+}
+.shortmeter .card .card-body .data-info h3 {
+font-size: 1.42rem;
+color: #2d2e30;
+}
+
+/* =======added chapter sectton ==== */
+.btn{
+    border-radius: 30px !important;
+}
+button:disabled {
+    background: rgb(114, 86, 86) !important;
+  }
+
+.manage-chap h3 {
+font-size: 1.22rem;
+color: #8b8b8b;
+}
+
+
+/* ====table style = */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    border-bottom: 1px solid #333;
+    background: rgb(255, 255, 255);
+  }
+  
+  thead{
+      border-bottom: 2spx solid rgb(139, 139, 139);
+  }
+  
+  th, td {
+    text-align: center;
+    padding: 8px;
+  }
+.manage-ques td {
+    text-align: center;
+    padding: 5px;
+    border: 1px solid rgb(149, 149, 149) ;
+  }
+  
+  tr:nth-child(even){background-color: #f2f2f2}
+  
+  tr:hover{background-color: #b7ffbd}
+  
+  th {
+    background-color: #07cd84;
+    color: white;
+  }
+
+  /* ======over write bs class for moble screen= */
+  input[type=text]{
+      text-transform: capitalize;
+  }
+  .header-bg{
+    background: linear-gradient(to top left, #ccffff 0%, #ff99cc 100%);
+  }
+  .search-header{
+    background: linear-gradient(to top left, #ffe1cc 0%, #ff99c2 100%);
+  }
+  .bg-of-question-head{
+    background: linear-gradient(to top left, #ccddff 10%, #99ffda 90%);
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .bg-of-question{
+    background: linear-gradient(to top left, #ffe1cc 10%, #fff799 90%);
+  }
+  .newFonts1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+  }
+  .answerStep{
+  
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 30px;
+      height: 30px;
+      color: #fff;
+      background-color: #000;
+      border-radius: 50%;
+      font-size: 22px;
+  }
+
+  /* disable pointer event on answer image   */
+
+ .allAnswerData img {
+    pointer-events: none;
+}
+  .questionColor {
+    background: rgba(197, 22, 245, 0.09);
+  }
+
+  .paged{
+      background: #f37413;
+      color: #222;
+      font-weight: 600;
+  }
+  .alertbg{
+    padding: 8px;
+    border-radius: 8px;
+    background: linear-gradient(90deg,  rgb(253, 215, 77) 4%, rgba(0,212,255,1) 100%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  @media screen and (max-width:950px) {
+      .w-50{
+          width: 100% !important;
+      }
+  }
+
