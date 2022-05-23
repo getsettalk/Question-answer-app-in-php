@@ -9,4 +9,6 @@ This application built in html, css, js, jquey, bootstrap 5 and php
 
 ![regist](https://user-images.githubusercontent.com/49394996/169801372-b9d6a783-6fcd-419c-9ece-4ef6f0fd958c.png)
 
+
+`view landing page `:https://getsettalk.github.io/Question-answer-app-in-php/
 `Support us`
